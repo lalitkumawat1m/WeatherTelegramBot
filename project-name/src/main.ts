@@ -6,7 +6,7 @@ async function bootstrap() {
     cors:true,
   });
   app.enableCors({
-    origin:'http://localhost:5173/',
+    origin:['http://localhost:5173/','https://weather-telegram-bot-plum.vercel.app/'],
     methods: ['POST', 'PUT', 'DELETE', 'GET']
   });
   await app.listen(3000);
